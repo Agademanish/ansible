@@ -9,7 +9,7 @@
     - name: enabling the apache service and not touching the state
       ansible.builtin.package:
         name: apache2
-        enabled: yes
+        enabled: true
         
         
     
