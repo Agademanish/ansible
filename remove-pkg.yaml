@@ -1,0 +1,11 @@
+- name: remove package
+  hosts: all
+  become: yes
+  tasks:
+    - name: remove packages
+      ansible.builtin.package:
+        name:
+          - nginx
+          - apache2
+        state: absent
+      
