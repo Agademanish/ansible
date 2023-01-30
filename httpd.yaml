@@ -7,7 +7,7 @@
         name:
           - nginx
           - apache2
-        state: started
+        state: latest
         enabled: yes
         
     
