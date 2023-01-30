@@ -1,9 +1,9 @@
-- name: package install on hosts
+- name: package installation on hosts
   hosts: all
   become: yes
   tasks:
-    name: install apache
-    ansible.builtin.package:
+    - name: install apache
+      ansible.builtin.package:
         name:
           - nginx
           - apache2
