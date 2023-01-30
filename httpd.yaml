@@ -4,10 +4,13 @@
   tasks:
     - name: install apache
       ansible.builtin.package:
-        name:
-          - nginx
-          - apache2
+        name: apache2
         state: latest
-        enabled: yes
+    - name: remove package
+      ansible.builtin.package:
+        name: nginx
+        state: absent
+
+        
         
     
