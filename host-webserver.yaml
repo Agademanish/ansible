@@ -21,6 +21,6 @@
 
     - name: copy thetemplate to /var/www/html/
       ansible.builtin.copy:
-        src: /home/ubuntu/template/*
+        src: /home/ubuntu/html/*
         dest: /var/www/html/
         remote_src: yes
