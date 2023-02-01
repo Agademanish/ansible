@@ -17,6 +17,7 @@
       ansible.builtin.unarchive:
         src: /home/ubuntu/template.zip
         dest: /home/ubuntu/template
+        remote_src: yes
 
     - name: copy thetemplate to /var/www/html/
       ansible.builtin.copy:
