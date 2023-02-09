@@ -1,0 +1,10 @@
+- name: loops playbook
+  hosts: all
+  tasks: 
+    - name: msg print in loop iteration
+      debug:
+        msg: "{{item}}"
+      loop:
+        - new york
+        - london 
+        - paris 

@@ -1,0 +1,12 @@
+- name: variable playbook
+  hosts: all
+  vars:
+    url: www.global.com
+  vars_files:
+    - filevars.yaml
+  tasks:
+  - name: variable-playbook
+    debug:
+      msg: "priority of vars is for {{url}}"
+    vars: 
+      url: www.local.com 
