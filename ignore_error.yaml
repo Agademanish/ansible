@@ -1,10 +1,10 @@
--name: ignore.errors
-hosts: all 
-tasks:
-  - name: ignore.error
-    shell: ps -aux | grep java | grep -v java
-    ignore_errors: yes 
+- name: ignore.errors
+  hosts: all 
+  tasks:
+    - name: ignore.error
+      shell: ps -aux | grep java | grep -v java
+      ignore_errors: yes 
 
-  - name: put the process
-    debug:
-    msg: starts the process
+    - name: put the process
+      debug:
+      msg: starts the process
