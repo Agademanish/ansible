@@ -7,6 +7,4 @@
   tasks:
   - name: variable-playbook
     debug:
-      msg: "priority of vars is for {{url}}"
-    vars: 
-      url: www.local.com 
+      msg: "priority of vars is for {{url}}" 
