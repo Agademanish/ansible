@@ -1,0 +1,10 @@
+- name: registering variables
+  hosts: all
+  tasks: 
+    - name: regestering output of uptime in variables
+      shell: uptime
+      register: OUTPUT
+
+    - name: printing the register variable value
+      debug: 
+        msg: {{OUTPUT.STDOUT}}
